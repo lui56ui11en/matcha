@@ -1,15 +1,20 @@
+html{
+  font-size: 70%;
+}
 body {
     background-color: #fffbf7;
 }
 
 h1 {
-    color: #46484c;
+    color: #025157;
+    font-size: 6rem;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
     color: #8b8b8bcc;
-    font-family: verdana;
-    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 
 button {
@@ -18,29 +23,29 @@ button {
 }
 /*Header */
 header{
-        margin-top: 40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 0;
-        padding-left: 60px;
-        padding-top: 40px;
+        margin-top: 0;
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1rem;
+        padding-left: 6em;
+        padding-top: 0;
 }
 .header > * {
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.5rem;
     vertical-align: middle;
     height: 100%;
-    line-height: 45px;
+    line-height: 4.5em;
   }
 a strong{
     color: #025157;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em; 
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 3rem; 
     vertical-align: top;
 }
 #i{
-    padding-top: 20px;
-    vertical-align: bottom;
+    font-size: 4rem;
+    vertical-align: middle;
 }
 #i a{
     text-decoration: none;
@@ -48,9 +53,6 @@ a strong{
 .logo{
     width: 15%;
 }
-.logo > img {
-    width: 15%;
-  }
 .navbar{
     width: 60%;
     text-align: center;
@@ -67,12 +69,13 @@ a strong{
 .actions {
     width: 15%;
     text-align: right;
-    font-size: 14px;
+    font-size: 1rem;
   }
   
   .actions > * {
-    margin-right: 10px;
-    margin-left: 10px;
+    font-size: 1rem;
+    margin-right: 1em;
+    margin-left: 1em;
   }
   
   .actions a {
@@ -86,12 +89,12 @@ a strong{
   .actions button {
     color: white;
     background-color: #025157;
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-left: 1.4em;
+    padding-right: 1.4em;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
     border: 0;
-    border-radius: 5px;
+    border-radius: .5em;
   }
   .actions button:hover{
     background-color: #67b54b;
@@ -103,7 +106,7 @@ ul{
 ul li{
    list-style: none;
    display: inline;
-   padding-left: 35px;
+   padding-left: 3.5em;
 }
 ul li a{
    text-decoration: none;
