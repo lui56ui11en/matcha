@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    display: flex;
+    /*flex-direction: row;*/
+    flex-wrap: wrap;
+    /*flex-flow: row wrap;*/
+    /*justify-content: center;*/
+    height: 20em;
+    /*align-items: center;*/
+    background-color: goldenrod;
+    font-size: 1rem;
+    padding: 1em;
+    border: 2px solid #000;
+}
+
+.contenedor div{
+    font-size: 2rem;
+    /*background-color: blueviolet;*/
+    width: 2em;
+    margin: .5em;
+    text-align: center;
+    line-height: 2em;
+    border: 2px solid #000;
+}
+
+.hijo1{
+    background-color: blue;
+    flex-grow: 1;
+}
+.hijo2{
+    background-color: red;
+    flex-grow: 1;
+}
+.hijo3{
+    background-color: green;
+    flex-grow: 1;
+}
+.hijo4{
+    background-color: yellow;
+    flex-grow: 1;
+    /*flex: grow shrink basis;*/
+}
