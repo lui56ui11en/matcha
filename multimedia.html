@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de videos</title>
+</head>
+<body>
+    <h1> Mi reproductor de video</h1>
+    <video width="320" height="240" id="video1">
+        <source src="video/ejemplo.mp4" type="video/mp4">
+        <!--<source src="video/" type="video/mp4">
+        El navegador no soportala etiqueta de video-->
+    </video>
+    <div>
+    <button onclick="playPause()">&#9658;/||</button>
+    <button onclick="stop()">&#9726;</button>
+    <button onclick="skip(-10)">&lt;&lt;</button>
+    <button onclick="skip(+10)">&gt;&gt;</button>
+    </div>
+    <script>
+        var miVideo = document.getElementById("video1");
+        function playPause(){
+            if(miVideo.paused){
+                miVideo.play();
+            }else{
+                miVideo.pause();
+            }
+        }
+        function stop(){
+            miVideo.pause();
+            miVideo.currentTime = 0;
+        }
+        function skip(value){
+            miVideo.currentTime += value;
+        }
+    </script>
+</body>
+</html>
