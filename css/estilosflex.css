@@ -38,8 +38,20 @@
     background-color: green;
     flex-grow: 1;
 }
-.hijo4{
-    background-color: yellow;
-    flex-grow: 1;
     /*flex: grow shrink basis;*/
+
+.vent{
+    font-size: 4rem;
+    color: yellow;
+    height: 5em;
+    width: 9em;
+    background-color: darkolivegreen;
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    /*display: flex;
+    align-items: center;*/
 }
