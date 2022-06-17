@@ -29,6 +29,7 @@ header{
         font-size: 1rem;
         padding-left: 6em;
         padding-top: 0;
+        /*position: relative;*/
 }
 .header > * {
     display: inline-block;
@@ -44,13 +45,16 @@ a strong{
     vertical-align: top;
 }
 #i{
-    font-size: 4rem;
+    font-size: 1rem;
     vertical-align: middle;
+    border: 1px solid red;
 }
 #i a{
     text-decoration: none;
 }
 .logo{
+    font-size: 1rem;
+    padding-top: 4em;
     width: 15%;
 }
 .navbar{
@@ -111,4 +115,12 @@ ul li{
 ul li a{
    text-decoration: none;
    color: #025157;
+}
+
+.onda{
+  position: absolute;
+  bottom: 0px;
+  left:0px;
+  /*top: 0px;*/
+  z-index: -1;
 }

@@ -52,6 +52,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
     margin: auto;
+    display: grid;
+    place-items: center;
     /*display: flex;
     align-items: center;*/
 }
