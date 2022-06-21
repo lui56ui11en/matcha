@@ -2,7 +2,7 @@ html{
   font-size: 70%;
 }
 body {
-    background-color: #fffbf7;
+    background-color: #faf5f0;
 }
 
 h1 {
@@ -123,4 +123,10 @@ ul li a{
   left:0px;
   /*top: 0px;*/
   z-index: -1;
+}
+.row{
+  display: flex;
+}
+.row p{
+  color: black;
 }

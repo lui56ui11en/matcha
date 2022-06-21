@@ -1,0 +1,7 @@
+.caja{
+    color: white;
+}
+.caja::first-letter{
+    color: red;
+    font-size: xx-large;
+}
