@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+**{
+  margin: 0;
+  padding: 0;
+}
 html{
   font-size: 70%;
 }
@@ -21,13 +29,16 @@ button {
     color: #fff;
     background-color: #025157;
 }
+/* img{
+  vertical-align: middle;
+} */
 /*Header */
 header{
         margin-top: 0;
         margin-left: 2em;
         margin-right: 2em;
         font-size: 1rem;
-        padding-left: 6em;
+        padding-left: 0em;
         padding-top: 0;
         /*position: relative;*/
 }
@@ -40,25 +51,25 @@ header{
   }
 a strong{
     color: #025157;
-    font-family: 'Hammersmith One', sans-serif;
-    font-size: 3rem; 
-    vertical-align: top;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem; 
+    /* vertical-align: top; */
 }
 #i{
-    font-size: 1rem;
+    font-size: 0rem;
     vertical-align: middle;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 #i a{
     text-decoration: none;
 }
 .logo{
     font-size: 1rem;
-    padding-top: 4em;
+    padding-top: 1em;
     width: 15%;
 }
 .navbar{
-    width: 60%;
+    width: 65%;
     text-align: center;
     color: #025157;
     font-weight: 500;
@@ -66,15 +77,9 @@ a strong{
 .actions{
     width: 15%;
     text-align: right;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 600;
 }
-
-.actions {
-    width: 15%;
-    text-align: right;
-    font-size: 1rem;
-  }
   
   .actions > * {
     font-size: 1rem;
@@ -92,7 +97,7 @@ a strong{
   
   .actions button {
     color: white;
-    background-color: #025157;
+    background-color: #67b54b;
     padding-left: 1.4em;
     padding-right: 1.4em;
     padding-top: 1.2em;
@@ -101,7 +106,7 @@ a strong{
     border-radius: .5em;
   }
   .actions button:hover{
-    background-color: #67b54b;
+    background-color: #025157;
   }
 /*Menu*/
 ul{
@@ -129,4 +134,19 @@ ul li a{
 }
 .row p{
   color: black;
+}
+.space{
+  /* font-size: 1rem; */
+  margin-top: 3em;
+  text-align: center;
+}
+article p{
+  text-align: center;
+}
+.features{
+  font-size: 2rem;
+  display: grid;
+   grid-template-columns: repeat(3, 300px); 
+  /*grid-template-columns: 500px 1fr;
+  grid-template-columns: 1fr 1fr;*/
 }
