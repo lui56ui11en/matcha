@@ -5,56 +5,67 @@
     <!-- Aquí va información importante pero no visible dentro del navegador -->
     <title>Matcha</title>
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asul:wght@700&display=swap" rel="stylesheet">
 </head>
 <!--Aqui se cambio el color de fondo de la pagina-->
 
 <body>
-    <header class="header">
-        <!-- Logo con link a la página principal -->
-        <div id="i" class="logo">
-            <a href="#">
-                <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" height="25px" width="25px" />
-                <strong>Matcha</strong>
-            </a>
-        </div>
-        <!-- Menú de navegación -->
-        <nav class="navbar">
-            <ul>
-                <li><a href="#">Platform</a></li>
-                <!--<ul>
-                        <li><a href="#">Blog creator</a></li>
-                        <li><a href="#">Content library</a></li>
-                    </ul>-->
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Costumers</a></li>
-                <li><a href="#">Resources</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </nav>
-        <!-- Contenedor de acciones de usuario -->
-        <div class="actions">
-            <a href="#">Sign In</a>
-            <button>Get a Demo</button>
-        </div>
-    </header>
+    <section class="fixed-header">
+        <header class="header">
+            <!-- Logo con link a la página principal -->
+            <div id="i" class="logo">
+                <a href="#">
+                    <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" height="25px" width="25px" />
+                    <strong>Matcha</strong>
+                </a>
+            </div>
+            <!-- Menú de navegación -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Platform</a></li>
+                    <!--<ul>
+                            <li><a href="#">Blog creator</a></li>
+                            <li><a href="#">Content library</a></li>
+                        </ul>-->
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Costumers</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <!-- Contenedor de acciones de usuario -->
+            <div class="actions">
+                <a href="#">Sign In</a>
+                <button>Get a Demo</button>
+            </div>
+        </header>
+    </section>
     <!-- Esto es lo que se verá en el navegador web -->
-    <h1 class="space">Build your blog. Build your business.</h1>
-    <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog's
-        impact on sales</p>
-    <p>
-        Start publishing today with a <strong>free 7-day trial.</strong>
-    </p>
-    <p>
-        <strong>No credit card</strong> required.
-    </p>
-    <form>
-        <input type="email" name="email" />
-        <button type="submit">
-            Get a Demo &rarr;
-        </button>
-    </form>
-    <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" />
+    <section>
+        <h1 class="space">Build your blog. Build your business.</h1>
+        <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog's
+            impact on sales</p>
+        <br/>
+        <form>
+            <input type="email" name="email" />
+            <button type="submit">
+                Get a Demo &rarr;
+            </button>
+        </form>
+        <p>
+            Start publishing today with a free 7-day trial.
+        </p>
+        <p>
+            <strong>No credit card</strong> required.
+        </p>
+    </section>
+    <center>
+        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" />
+        <img src="images/intro_group_image.png" alt="ventanas con ejemplos" height="60%" width="60%">
+    </center>
+    
     <div class="row">
         <section>
             <video controls
@@ -64,9 +75,13 @@
             </video>
         </section>
         <article>
-            <h1>Publish to your blog in minutes, not hours.</h1>
-            <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s impact on
-                sales.</p>
+            <h2>Publish to your blog in<br/> minutes, not hours.</h2>
+            <p>Instantly publish articles, drive more traffic, grow your email list, and see your blog’s
+                impact on sales.
+            </p>
+            <p>
+                Start publishing today: <strong>See how it works.</strong>
+            </p>
             <form>
                 <input type="email" name="email" />
                 <button type="submit">
@@ -79,19 +94,66 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/3qVPNONdF58" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
-    <section class="features">
-        <article>
-            Característica 1
-        </article>
-        <article>
-            Característica 2
-        </article>
-        <article>
-            Característica 3
-        </article>
-        <article>
-            Característica 4
-        </article>
+    <section class="algo">
+        <section class="features">
+            <article>
+                <img
+                    src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-1.png"
+                    alt="Publish icon"
+                />
+                <h3>Fill your blog with engaging articles.</h3>
+                <p>
+                  Publish to your blog in less time than it takes to drink your
+                  morning coffee.
+                </p>
+                <a href="">Publish instantly →</a>
+            </article>
+            <article>
+                <figure>
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2020/07/feature-blog-email.png"
+                      alt="Site traffic icon"
+                    />
+                  </figure>
+                  <h3>Attract and engage more website visitors.</h3>
+                  <p>
+                    Enhance your email, social media channels, and paid ads with content
+                    from Matcha.
+                  </p>
+                  <a href="">Get more site traffic →</a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2020/04/feature-platform-3.png"
+                      alt="Capture icon"
+                    />
+                  </figure>
+                  <h3>Capture more emails with locked content.</h3>
+                  <p>
+                    Convert 10x more of your traffic into subscribers and nurture them
+                    to a sale.
+                  </p>
+                  <a href="">Grow your email list faster →</a>
+                </div>
+            </article>
+            <article>
+                <figure>
+                    <img
+                      src="https://getmatcha.com/wp-content/uploads/2020/04/feature-library-1.png"
+                      alt="ROI icon"
+                    />
+                  </figure>
+                  <h3>Optimize your blog’s performance.</h3>
+                  <p>
+                    See what content delivers the most traffic, engagement, email
+                    subscribers, and sales.
+                  </p>
+                  <a href="">See content’s ROI →</a>
+                </div>
+            </article>
+        </section>
     </section>
 </body>
 
