@@ -2,6 +2,9 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <!-- Aquí va información importante pero no visible dentro del navegador -->
     <title>Matcha</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -9,13 +12,45 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@900&family=Open+Sans:wght@300&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <!--Aqui se cambio el color de fondo de la pagina-->
 
 <body>
-    <section class="fixed-header">
-        <header class="header">
+    <!-- <section class="fixed-header">
+        <header class="header"> -->
             <!-- Logo con link a la página principal -->
+            <!-- <div id="i" class="logo">
+                <a href="#">
+                    <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" height="25px"
+                        width="25px" />
+                    <strong>Matcha</strong>
+                </a>
+            </div> -->
+            <!-- Menú de navegación -->
+            <!-- <nav class="navbar">
+                <ul>
+                    <li><a href="#">Platform</a></li> -->
+                    <!--<ul>
+                            <li><a href="#">Blog creator</a></li>
+                            <li><a href="#">Content library</a></li>
+                        </ul>-->
+                    <!-- <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Costumers</a></li>
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav> -->
+            <!-- Contenedor de acciones de usuario -->
+            <!-- <div class="actions">
+                <a href="#">Sign In</a>
+                <button>Get a Demo</button>
+            </div>
+        </header>
+    </section> -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
             <div id="i" class="logo">
                 <a href="#">
                     <img src="https://getmatcha.com/wp-content/uploads/2020/01/Icon-green.png" height="25px"
@@ -23,27 +58,38 @@
                     <strong>Matcha</strong>
                 </a>
             </div>
-            <!-- Menú de navegación -->
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Platform</a></li>
-                    <!--<ul>
-                            <li><a href="#">Blog creator</a></li>
-                            <li><a href="#">Content library</a></li>
-                        </ul>-->
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Costumers</a></li>
-                    <li><a href="#">Resources</a></li>
-                    <li><a href="#">About</a></li>
-                </ul>
-            </nav>
-            <!-- Contenedor de acciones de usuario -->
-            <div class="actions">
-                <a href="#">Sign In</a>
-                <button>Get a Demo</button>
-            </div>
-        </header>
-    </section>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Platform</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Blog creator</a></li>
+                    <li><a class="dropdown-item" href="#">Content library</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Costumers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Resources</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">About</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <label class="me-2">Sing in</label>
+              <button class="btn btn-outline-success" type="submit">Get a Demo</button>
+            </form>
+          </div>
+        </div>
+      </nav>
     <!-- Esto es lo que se verá en el navegador web -->
     <section>
         <h1 class="space">Build your blog. Build your business.</h1>
@@ -63,11 +109,12 @@
             <strong>No credit card</strong> required.
         </p>
     </section>
-    <center>
-        <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" />
-        <img src="images/intro_group_image.png" alt="ventanas con ejemplos" height="60%" width="60%">
-    </center>
-
+    <figure class="banner">
+        <center>
+            <img src="https://ignos.blog/wp-content/uploads/2021/04/capterra.png" alt="imagen capterra" />
+            <img src="images/intro_group_image.png" alt="ventanas con ejemplos" height="60%" width="60%">
+        </center>
+    </figure>
     <div class="row">
         <section>
             <video controls
@@ -165,7 +212,7 @@
             <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on
                 sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content
                 and consistent performance from their blogs.</p>
-                <button>Who uses matcha?</button>
+            <button>Who uses matcha?</button>
         </div>
         <div class="b2">
             <img src="">
@@ -177,5 +224,8 @@
         </div>
     </section>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 
 </html>
