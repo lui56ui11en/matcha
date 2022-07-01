@@ -1,0 +1,24 @@
+//global.scss
+
+
+//Colores
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$performance: #67b54b;
+$texto: #4a4a4a;
+$titulo: #025157;
+
+/**
+Fuentes
+**/
+$font-title:"Alegreya",serif;
+
+%base-title{
+    font-family: $font-title;
+    color: $dark-green-text;
+}
+
+%base-card{
+    
+}

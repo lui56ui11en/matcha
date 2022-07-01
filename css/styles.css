@@ -224,6 +224,9 @@ section div{
   display: flex;
   flex-direction: row;
 }
+section .blog div{
+  display: ;
+}
 h3{
   font-size: 2rem;
 }

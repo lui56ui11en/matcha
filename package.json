@@ -1,0 +1,23 @@
+{
+  "name": "matcha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lui56ui11en/matcha.git"
+  },
+  "keywords": [],
+  "author": "Luis Guillén",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lui56ui11en/matcha/issues"
+  },
+  "homepage": "https://github.com/lui56ui11en/matcha#readme",
+  "dependencies": {
+    "sass": "^1.53.0"
+  }
+}
