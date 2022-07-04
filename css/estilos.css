@@ -203,6 +203,10 @@ body{
     object-fit: contain;
     width: 100%;
   }
+
+  .texto-boton:hover{
+    background-color: #67b54b;
+  }
   
   @media (max-width: 991px) {
     .success-stories {
