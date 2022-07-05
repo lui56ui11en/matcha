@@ -123,7 +123,7 @@ button{
     width: 1%;
     height: 5%;
     background: none;
-    position: absolute;/*permite colocar todo dentro del elemento padre*/
+    position: absolute;
     z-index: 1;
     top: 50%;
     left: 50%;

@@ -27,9 +27,6 @@ button {
 }
 
 .header {
-  /* margin-top: 40px;
-  margin-left: 20px;
-  margin-right: 20px; */
   margin: 40px 20px 0;
   font-size: 0;
   font-family: sans-serif;
@@ -99,7 +96,6 @@ li {
 }
 
 .publish {
-  /* container styles if any */
   margin-left: 30px;
 }
 
@@ -156,9 +152,7 @@ iframe {
   background-color: #025157;
   padding: 5% 10%;
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   height: 660px;
-  /* grid-template-rows: repeat(2, 1fr); */
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
 }
 
@@ -262,7 +256,6 @@ iframe {
   max-width: 100%;
 }
 
-/* Cambiamos el alto mínimo de la tarjeta, para que se vea bien en responsive */
 .success-stories .card {
   max-width: 370px;
   width: 100%;
@@ -270,13 +263,11 @@ iframe {
   margin: 0 auto;
 }
 
-/* Con object-fit, hacemos que la imagen se ajuste a la medida de su contenedor y limitamos su alto */
 .success-stories .card img {
   max-height: 30vh;
   object-fit: cover;
 }
 
-/* Agregamos position: relative para recibir un elemento con position:absolute más adelante */
 .success-stories .card .card-body {
   max-width: 370px;
   width: 100%;
@@ -284,7 +275,6 @@ iframe {
   padding: 40px 1rem 1rem;
 }
 
-/* Estos son los estilos para textos y acomodo de elementos */
 .success-stories .card .card-body h4 {
   color: #025157;
   font-size: 18px;
@@ -335,7 +325,6 @@ iframe {
   border: none;
 }
 
-/* Aqui hacemos un círculo con CSS! Este se posicionará en el margen superior de .card-body */
 .success-stories .card .card-body .card-circle {
   display: flex;
   align-items: center;
@@ -348,7 +337,6 @@ iframe {
   padding: 5px;
 }
 
-/* Cada círculo tiene su propio color. Verifica qué significa este selector: .card-circle.everly */
 .success-stories .card .card-body .card-circle.everly {
   background-color: #f9da73;
   border: 5px solid #f9da73;
@@ -364,7 +352,6 @@ iframe {
   border: 5px solid #ef7179;
 }
 
-/* Los círculos deben recibir la imagen y ajustarla al tamaño */
 .success-stories .card .card-body .card-circle.everly img,
 .success-stories .card .card-body .card-circle.summit img,
 .success-stories .card .card-body .card-circle.mambe img {
@@ -372,13 +359,7 @@ iframe {
   width: 100%;
 }
 
-/** dispositivos móviles en vista viewport (vertical) */
 @media (max-width: 575px){
-  /* .navbar,
-  .actions {
-    display: none;
-  } */
-
   .main {
     margin-top: 130px;
   }
@@ -406,6 +387,7 @@ iframe {
 
   .publish > form > div > input {
     width: 65%;
+    height: 20px;
   }
 
   .promo {
@@ -448,6 +430,52 @@ iframe {
     flex-direction: column;
   }
 }
+
+.texto-boton {
+  font-size: 1rem;
+  height: 30px;
+  width: 10%;
+  padding: 6px 20px;
+  margin-left: -10px;
+  color: #fff;
+  background-color: #025157;
+  border-radius: 8px;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.texto-boton span {
+  transition: .5s ease-in-out all;
+    position: absolute;
+    left: 25%;
+    top: 0;
+    z-index: 2;
+}
+
+.texto-boton.uno::after {
+  content: "";
+    width: 1%;
+    height: 5%;
+    background: none;
+    position: absolute;/*permite colocar todo dentro del elemento padre*/
+    z-index: 1;
+    top: 50%;
+    left: 60%;
+    border-radius: 50%;
+    transition: 0.75s ease-in-out all;
+}
+
+.texto-boton.uno:hover::after {
+  transform: scale(170);
+    background: rgb(43, 156, 119);
+    border-radius: 50%;
+    transform-origin: center;
+}
+
+
 
 /** dispositivos pequeños en vista landscape (horizontal) */
 @media (min-width: 576px) and (max-width: 767px) {
